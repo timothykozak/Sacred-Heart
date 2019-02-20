@@ -1,0 +1,112 @@
+<!-- Head -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2005/10/profile">
+	<link rel="icon" type="image/png" href="/Content/Images/FavIcon/GreenCross.png">
+	<title>Contact Us</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="/Content/CSS/CCI.css" type="text/css" />
+	<script src="/Content/Scripts/Today.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var firstClick = true;
+		function clearArea() {
+			var x = document.getElementById("myTextArea");
+			debugger
+			if (firstClick) {
+				x.value = "";
+				firstClick = false;
+			}
+		}
+	</script>
+</head>
+
+<body bgcolor="#F4FFE4">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><!-- Primary layout table -->
+  	<tr bgcolor="#D5EDB3"><!-- Banner -->
+    	<td width="224" rowspan="2"><img src="/Content/Images/UpperLeft/CornerStone.jpg" alt="Header image" width="224" height="150" border="0" /></td>
+    	<td rowspan="2" ><img src="/Content/Images/spacer.gif" alt="" width="50" height="1" border="0" /></td>
+    	<td height="50" id="logo" valign="bottom" align="center" nowrap="nowrap">Sacred Heart Catholic Church</td>
+    	<td width="100%">&nbsp;</td>
+  	</tr>
+
+  	<tr bgcolor="#D5EDB3">
+    	<td height="51" id="tagline" valign="top" align="center">Contact Us</td>
+		<td width="100%">&nbsp;</td>
+  	</tr><!-- Banner -->
+
+
+  	<tr><!-- Seperator Bar -->
+    	<td colspan="4" bgcolor="#5C743D"><img src="/Content/Images/spacer.gif" alt="" width="1" height="2" border="0" /></td>
+  	</tr>
+
+  	<tr>
+    	<td colspan="4" bgcolor="#99CC66" background="/Content/Images/dashed_line.gif"><img src="/Content/Images/dashed_line.gif" alt="line decor" width="4" height="3" border="0" /></td>
+  	</tr>
+
+  	<tr bgcolor="#99CC66">
+  		<td colspan="4" id="dateformat" height="20">&nbsp;&nbsp;
+				<script language="JavaScript" type="text/javascript">document.write(TODAY);</script>
+      </td>
+      <td></td>
+  	</tr>
+
+  	<tr>
+    	<td colspan="4" bgcolor="#99CC66" background="/Content/Images/dashed_line.gif"><img src="/Content/Images/dashed_line.gif" alt="line decor" width="4" height="3" border="0" /></td>
+  	</tr>
+
+  	<tr>
+    	<td colspan="4" bgcolor="#5C743D"><img src="/Content/Images/spacer.gif" alt="" width="1" height="2" border="0" /></td>
+  	</tr><!-- Seperator Bar -->
+    
+    
+ 		<tr><!-- Menu and Content -->
+    	<td valign="top" bgcolor="#5C743D"><!-- Table for menu -->
+				<table border="0" cellspacing="0" cellpadding="0" width="100%" id="navigation">
+        	<tr><td><br /><br /></td></tr>
+        	<tr><td><a href="/index.html">Home</a></td></tr>
+          <tr><td><br/><br/><br/><br/></td></tr>
+        	<tr><td><a href="/Everything.html" >Find Everything Here</a></td></tr>
+      	</table><!-- Table for menu -->
+   		</td>
+      
+    	<td></td><!-- Spacer Column -->
+      
+    	<td valign="top">&nbsp;<br /><br /><!-- Page Content -->
+    		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+        	<tr>
+          	<td width="50%" class="pageName">Parish Office</td>
+          	<td width="50%" class="pageName">&nbsp;</td>
+          </tr>
+        	<tr>
+          	<td class="bodyText">740.992.5898<br />
+         	  740.444.5058 (Fax)<br/><br/>wserbonich@athenscatholic.org<br /><br /></td>
+          	<td class="bodyText">&nbsp;</td>
+					</tr>
+          
+          
+          <tr>
+          	<td colspan="2">
+            	<form action="http://www.sacredheartpomeroy.com/Content/Scripts/MailTo.php" >
+                <input type="hidden" name="redirect" value="http://www.sacredheartpomeroy.com/ThankYou.html"/>
+                <input type="hidden" name="to" value="wserbonich@athenscatholic.org"/>
+                <input type="hidden" name="thesubject" value="Comment From SacredHeartPomeroy Website"/>
+              	<fieldset>
+                	<legend class="pageName">Send us an e-mail</legend><br/>
+                  <input type="text" name="from" size="50"/>
+                  <span class="bodyText">    Your e-mail address (Optional)<br/><br/></span>
+	                <textarea class="bodyText" name="themessage" id="myTextArea" onclick="clearArea()" cols="58" rows="10" >Type your message here.</textarea><br/>
+                  <center>
+  	            	<input type="submit" value="Send"/>
+    	            <input type="reset" value="Reset" onclick="firstClick = true;"/>
+                  </center>
+                 </fieldset>
+              </form>          	</td>
+          </tr>
+      	</table>
+			</td><!-- Page Content -->
+      <td width="100%">&nbsp;</td><!-- Expand row to end of browser -->
+  	</tr><!-- Menu and Content -->
+	</table><!-- Primary layout table -->
+</body>
+</html>
